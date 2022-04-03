@@ -1,0 +1,60 @@
+ {
+ "Storedata" : [
+    {
+        "id":1,
+        "title":"ABC store",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKol8irGBlt5eigmopX7ngz-p1wuCrpJQH6g&usqp=CAU",
+        "rating": 4,
+        "oiling":600,
+        "wash":500,
+        "Ac_clean":850
+    },
+    {
+        "id":2,
+        "title":"ABC store",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKol8irGBlt5eigmopX7ngz-p1wuCrpJQH6g&usqp=CAU",
+        "rating": 3,
+        "oiling":600,
+        "wash":500,
+        "Ac_clean":850
+    },
+    {
+        "id":3,
+        "title":"ABC store",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKol8irGBlt5eigmopX7ngz-p1wuCrpJQH6g&usqp=CAU",
+        "rating": 3.5,
+        "oiling":600,
+        "wash":500,
+        "Ac_clean":850
+    },
+    {
+        "id":4,
+        "title":"ABC store",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKol8irGBlt5eigmopX7ngz-p1wuCrpJQH6g&usqp=CAU",
+        "rating": 3.5,
+        "oiling":600,
+        "wash":500,
+        "Ac_clean":850
+    },
+    {
+        "id":5,
+        "title":"ABC store",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKol8irGBlt5eigmopX7ngz-p1wuCrpJQH6g&usqp=CAU",
+        "rating": 3.5,
+        "oiling":600,
+        "wash":500,
+        "Ac_clean":850
+    },
+    {
+        "id":6,
+        "title":"ABC store",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKol8irGBlt5eigmopX7ngz-p1wuCrpJQH6g&usqp=CAU",
+        "rating": 3.5,
+        "oiling":600,
+        "wash":500,
+        "Ac_clean":850
+    }
+]
+
+
+ }

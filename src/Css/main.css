@@ -1,0 +1,18 @@
+body{
+    /* background-color:brown; */
+    background-image: url("../back/photo-1493238792000-8113da705763.avif");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+
+#selectbox{
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    margin-top: 30vh;
+    padding: 3rem;
+    border-radius: 5vh;
+    background-color: coral;
+
+}
