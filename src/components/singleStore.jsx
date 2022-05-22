@@ -1,15 +1,21 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
 // import { Storedata } from "../db";
 
 export const SingleData = () => {
   const [single, setSingledata] = useState({});
+  const [count , setCount] = useState(0);
   console.log("empty:", single);
 
   const navigate = useNavigate();
 
   const { id } = useParams();
   //console.log(id);
+
+  const handleCount = () =>{
+    setCount(1 + count);
+  }
 
   // ------------------------------------------------------------- For oil click
 
@@ -29,14 +35,13 @@ export const SingleData = () => {
       .catch((err) => {
         console.log(err);
       });
-      
-      alert("Added to cart")
+
+    alert("Added to cart");
   };
 
   // ------------------------------------------------------------- For wash click
 
   const addWash = () => {
-   
     fetch("http://localhost:3000/wash", {
       method: "POST",
       body: JSON.stringify(single),
@@ -50,13 +55,12 @@ export const SingleData = () => {
         console.log(err);
       });
 
-      alert("Added to cart")
+    alert("Added to cart");
   };
 
   //------------------------------------------------------------ For AC click
 
   const addAc = () => {
-   
     fetch("http://localhost:3000/AC", {
       method: "POST",
       body: JSON.stringify(single),
@@ -69,7 +73,7 @@ export const SingleData = () => {
       .catch((err) => {
         console.log(err);
       });
-      alert("Added to cart")
+    alert("Added to cart");
   };
 
   // =========================================
@@ -117,19 +121,24 @@ export const SingleData = () => {
 
   return (
     <div>
-{/* ******************** Cart ************************* */}
+      {/* ******************** Cart ************************* */}
       <br />
-       <div>
-        <button
-          type="button"
-          className="btn btn-primary"
+      <div>
+        <FaShoppingCart
           onClick={() => handleCart_oil(id)}
-          style={{float:"right", marginRight:"12%"}}
-        >
-          Go to Cart
-        </button>
+          
+          style={{
+            float: "right",
+            marginRight: "12%",
+            color: "yellow",
+            cursor:"pointer",
+            fontSize: "3vw",
+          }}
+          
+        />
+        
       </div>
-{/* *********************************************** */}
+      {/* *********************************************** */}
       <div className="container mt-5">
         <div className="row">
           <div
@@ -182,9 +191,11 @@ export const SingleData = () => {
               <br />
               <h5 className="card-title mt-5">{clean}</h5>
               <p className="card-text ">₹{wash}</p>
-              <button type="button"
-              onClick={addWash}
-               className="btn btn-primary">
+              <button
+                type="button"
+                onClick={addWash}
+                className="btn btn-primary"
+              >
                 ADD
               </button>
             </div>
@@ -197,18 +208,13 @@ export const SingleData = () => {
 
               <h5 className="card-title mt-5">{ac}</h5>
               <p className="card-text">₹{Ac_clean}</p>
-              <button type="button"
-              onClick={addAc}
-               className="btn btn-primary">
+              <button type="button" onClick={addAc} className="btn btn-primary">
                 ADD
               </button>
             </div>
           </div>
         </div>
       </div>
-
-      
-      
     </div>
   );
 };
